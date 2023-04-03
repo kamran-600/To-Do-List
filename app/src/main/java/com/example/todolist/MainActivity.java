@@ -131,18 +131,4 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-   /* @Override
-    protected void onResume() {
-        super.onResume();
-        MyDatabase db = MyDatabase.getInstance(this);
-        TaskDao taskDao = db.taskDao();
-        ArrayList<Task> list = (ArrayList<Task>) taskDao.getTasks();
-
-        binding.recyclerview.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
-        TaskAdapter adapter = new TaskAdapter();
-        adapter.submitList(list);
-        binding.recyclerview.setAdapter(adapter);
-        DividerItemDecoration decoration = new DividerItemDecoration(this,DividerItemDecoration.VERTICAL);
-        binding.recyclerview.addItemDecoration(decoration);
-    }*/
 }

@@ -28,7 +28,6 @@ import java.util.Locale;
 public class CreateTaskActivity extends AppCompatActivity {
 
     ActivityCreateTaskBinding binding;
-   // Uri imageUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +35,7 @@ public class CreateTaskActivity extends AppCompatActivity {
         binding = ActivityCreateTaskBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-      //  imageUri = createImageUri();
+
 
 
         /*ArrayAdapter<CharSequence> arrayAdapter = ArrayAdapter.createFromResource(this,R.array.completed,android.R.layout.simple_spinner_dropdown_item);
@@ -146,18 +145,5 @@ public class CreateTaskActivity extends AppCompatActivity {
         }
 
     }
-/*
-    public Uri createImageUri(){
-        File image = new File(getApplicationContext().getFilesDir(),"camera_img.png");
-        return FileProvider.getUriForFile(getApplicationContext(),"com.example.todolist", image);
-    }
 
-    ActivityResultLauncher<Intent> cameraIntent = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
-        @Override
-        public void onActivityResult(ActivityResult result) {
-            if(result.getResultCode()==RESULT_OK && result.getData()!=null){
-
-            }
-        }
-    });*/
 }
