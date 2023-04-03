@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fbfbfb"
+    android:animateLayoutChanges="true"
+    android:layout_height="80dp">
+
+
+    <TextView
+        android:id="@+id/tName"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Kamran Alam"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:text="description" />
+
+    <TextView
+        android:id="@+id/postedDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/tName"
+        android:fontFamily="sans-serif-medium"
+        android:text="Posted :"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:id="@+id/postedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/postedDateTitle"
+        android:fontFamily="sans-serif-medium"
+        android:text="12/01/2022"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/postedDate"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        app:lottie_autoPlay="true"
+        android:visibility="invisible"
+        app:lottie_fileName="checkedLottie.json" />
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="53dp"
+        android:layout_toRightOf="@id/desc"
+        android:fontFamily="sans-serif-medium"
+        android:text="7:00 am"
+        android:textSize="15sp" />
+
+
+
+</RelativeLayout>

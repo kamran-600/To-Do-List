@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">To Do List</string>
+
+    <string-array name="completed">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+</resources>
